@@ -13,6 +13,11 @@ html{
 .header-title{
   flex: 1;
 }
+
+.header-h1{
+  margin: 0 0 0 10px;
+}
+
 .nav-cont{
   display: flex;
   flex-direction: column;
@@ -29,6 +34,7 @@ html{
   margin: 0;
   padding: 0;
   overflow:hidden;
+  align-self: center;
 }
 
 .header .menu{
@@ -38,7 +44,6 @@ html{
 }
 
 .header .menu-icon {
-  border: 1px solid green;
   cursor: pointer;
   padding: 28px 20px;
   position: relative;
@@ -78,7 +83,40 @@ html{
   display:none
 }
 
-
 .header .menu-btn:checked ~ .menu{
   max-height: 240px;
 }
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* section cont-1 */
+.cont-1{
+  display: flex;
+  flex-direction: column;
+}
+.cont-one{
+  width: 272px;
+  position: relative;
+  left: 33px;
+}
+
+.cont-h1{
+  font-size: 24px;
+}
+.cont-one-img{
+  border-radius: 18px;
+}
+
