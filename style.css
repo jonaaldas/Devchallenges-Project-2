@@ -1,0 +1,84 @@
+html{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav */
+
+ header{
+  display: flex;
+} 
+
+.header-title{
+  flex: 1;
+}
+.nav-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.menu li:hover{
+  background-color: #bbb;
+}
+
+.menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition:max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  border: 1px solid green;
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon{
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  background: #333;
+}
+
+.header .menu-icon .nav-icon:before{
+   background: #333;
+   content: "";
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+}
+
+.menu-btn{
+  display:none
+}
+
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
