@@ -1,8 +1,13 @@
-html{
+*{
   margin: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
   font-family: 'Poppins', sans-serif;
 }
+
+
+
 
 /* nav */
 
@@ -106,6 +111,7 @@ html{
 .cont-1{
   display: flex;
   flex-direction: column;
+  /* min-width: 375px; */
 }
 .cont-one{
   width: 272px;
@@ -120,3 +126,145 @@ html{
   border-radius: 18px;
 }
 
+.cont-p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color:#2D9CDB;
+  margin: 50px 0 0 0;
+}
+
+.cont-h1{
+  margin-top: 0;
+}
+
+.cont-one-h1{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.cont-one-div-p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4F4F4F;
+}
+
+.form-label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #828282;
+}
+
+input{
+  border: none;
+}
+
+.input-button{
+  background: #2D9CDB;
+  border-radius: 12px;
+  width: 71px;
+  height: 39px;
+  border: none;
+  color:#F2F2F2;
+}
+
+/* cont-2 */
+
+.cont-2{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  left: 33px;
+  width: 315px;
+}
+
+.cont-two-h1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fa-edit{
+  width: 67px;
+}
+
+.cont-two-design div{
+  width: 67px;
+  height: 67px;
+  /* background: #2D9CDB; */
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fas-1{
+  background: #2D9CDB;
+
+}
+.fas-2{
+  background: #27AE60;
+}
+.fas-3{
+  background: #EB5757;
+
+}
+.fas{
+  font-size: 25px;
+  color: white;
+}
+
+.cont-two-design{
+  width: 315px;
+  height: 422px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 34px;
+  margin-bottom: 20px;
+}
+
+.cont-two-design > div,h1,p,button:not(:last-child){
+  margin-bottom:40px;
+}
+
+.h1-cont-design{
+  width: 100%;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.button-cont-design{
+  background: #E0E0E0;
+  border-radius: 12px;
+  border: none;
+  width: 116px;
+  height: 42px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+/* identical to box height */
+
+color: #828282;
+}
+
+.btn{
+  background: #2D9CDB;
+  border-radius: 12px;
+  color: white;
+}

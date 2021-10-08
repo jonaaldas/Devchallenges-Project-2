@@ -7,8 +7,7 @@
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
     />
-
-    <link rel="icon" href="devchallenges.png" />
+      <link rel="icon" href="devchallenges.png" />
     
     <link
       rel="shortcut icon"
@@ -16,10 +15,10 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500 display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Devchallenges</title>
@@ -55,16 +54,18 @@
           <h1 class="cont-one-h1">Story, emotion and purpose</h1>
         </div>
         <div class="cont-one-div">
-          <p class="cont-p">We help transform your ideas into real 
+          <p class="cont-one-div-p">We help transform your ideas into real 
             competition and help you achieve your strategic goals in short period of time
           <p>
-              <label for="">Want us to contact you?</label>
+            <div class="cont-one-input">
+              <label class="form-label" for="">Want us to contact you?</label>
               <div class="cont-one-input-cont">
                 <form action="">
                   <input type="text">
-                  <button>Join</button>
+                  <button class="input-button">Join</button>
                 </form>
               </div>
+            </div>  
         </div>
       </div>
     </section>
@@ -76,9 +77,8 @@
         </div>
       </div> 
       <div class="cont-two-div">
-
         <div class="cont-two-design">
-          <img src="" alt="" class="img-cont-design">
+          <div class="fas-1"><i class="fas fa-pen"></i></div>
           <h1 class="h1-cont-design">UI/UX Design</h1>
           <p class="p1-cont-design">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
@@ -87,17 +87,17 @@
         </div>
 
         <div class="cont-two-design">
-          <img src="" alt="" class="img-cont-design">
-          <h1 class="h1-cont-design">UI/UX Design</h1>
+          <div class="fas-2"><i class="fas fa-code"></i></div>
+          <h1 class="h1-cont-design">Front End</h1>
           <p class="p1-cont-design">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
           </p>
-          <button class="button-cont-design">Get started</button>
+          <button class="button-cont-design btn">Get started</button>
         </div>
 
         <div class="cont-two-design">
-          <img src="" alt="" class="img-cont-design">
-          <h1 class="h1-cont-design">UI/UX Design</h1>
+          <div class="fas-3"><i class="fas fa-bars"></i></div>
+          <h1 class="h1-cont-design">Back End</h1>
           <p class="p1-cont-design">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
           </p>
@@ -187,15 +187,16 @@
       </div>
 
       <div class="footer-contact-form">
-        <label for="">Want us to contact you?</label>
-              <div class="cont-one-input-cont">
-                <form action="">
-                  <input type="text">
-                  <button>Join</button>
-                </form>
-              </div>
+        <div class="cont-one-input">
+          <label class="form-label" for="">Want us to contact you?</label>
+          <div class="cont-one-input-cont">
+            <form action="">
+              <input type="text">
+              <button class="input-button" >Join</button>
+            </form>
+          </div>
+        </div>
       </div>
-
     </footer>
   </body>
 </html>
