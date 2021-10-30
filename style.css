@@ -13,7 +13,7 @@ body{
 
 /* nav */
 
- header{
+ .header{
   display: flex;
 } 
 
@@ -513,4 +513,150 @@ footer p{
   color: #A9A9A9;
   margin-top: 10px;
   margin-left: 20px;
+}
+
+
+/* @media */
+
+@media(min-width: 800px){
+  .header-title{
+    flex-grow:1;
+  }
+  .nav-cont{
+    flex-direction: row;
+    flex-grow: 2;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+
+  .header .menu{
+    display: flex;
+    flex-direction: row;
+    max-height: none;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .header .menu li{
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Cont-1 */
+  .cont{
+    max-width: none;
+  }
+  .cont-1, .cont-21{
+    width: 60%;
+  }
+  .cont-1 >*{
+    max-width: 400px;
+  }
+
+  .cont-21 > *{max-width: 300px;}
+
+  .cont-two-div{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cont-two-design{
+    max-width: 320px;
+  }
+
+  /* cont-3 */
+
+  .cont-three-sub{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 500);
+    gap: 2rem;
+  }
+  .cont-{
+    max-width: 500px;
+  }
+  .cont-:nth-child(1){
+   
+  }
+  .cont-1:nth-child(2n){
+    /* grid-row: 2/3 */
+  }
+
+  /* cont-4 */
+
+  .cont-four{
+    max-width: 234px;
+  }
+
+  .cont-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont-four-h1{
+    line-height: 27px;
+    font-size: 21px;
+  }
+
+  .cont-four-h4{
+    font-size: 13px;
+  }
+
+  .cont-four-p1{
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .img-four-1{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .img-four-2{
+    width: 50%;
+  }
+  .img-four-3{
+    width: 60%
+  }
+
+  /* cont-5 */
+  .cont-five{
+    width: 22%;
+  }
+  .cont-five-h1{
+    width: 70%;
+    font-size: 36px;
+  }
+  .cont-five-img{
+    width: 84px;
+  }
+
+  .cont-five{
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .cont-five-h5, .cont-five-h6{
+    font-size: 16px;
+  }
+
+  .cont-five-sib-cont{
+    justify-items: none;
+  }
+  /* wrapper */
+  .wrapper-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: none;
+  }
+
+  .footer-contact-form, .footer-cont{
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  footer p{
+    display: block;
+    margin: 0 auto;
+  }
 }
